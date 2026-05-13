@@ -1,0 +1,168 @@
+import { StyleSheet, Platform } from "react-native";
+
+const styleSuport = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+  headerSection: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#4A0000',
+    position: 'relative',
+    paddingHorizontal: 20,
+  },
+  logo: {
+    width: 180,
+    height: 180,
+    marginBottom: '10%',
+  },
+  headerLeftButton: {
+    position: 'absolute',
+    left: 20,
+    zIndex: 10,
+    marginBottom: '10%',
+  },
+  headerRightButton: {
+    position: 'absolute',
+    right: 20,
+    zIndex: 10,
+    marginBottom: '10%',
+  },
+  bodySection: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    paddingHorizontal: 20,
+    paddingTop: 10,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 15,
+    height: 30,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#4A0000',
+    textAlign: 'center',
+  },
+  selectorContainer: {
+    marginBottom: 10,
+  },
+  label: {
+    fontSize: 11,
+    fontWeight: 'bold',
+    color: '#666',
+    marginBottom: 5,
+    textTransform: 'uppercase',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+  miniChip: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 25,
+    backgroundColor: '#F2F2F2',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  miniChipActive: {
+    backgroundColor: '#4A0000',
+    borderColor: '#4A0000',
+  },
+  textActive: {
+    color: '#FFF',
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  textInactive: {
+    color: '#333',
+    fontSize: 12,
+  },
+  messageCard: {
+    padding: 14,
+    marginVertical: 6,
+    borderRadius: 20,
+    maxWidth: '85%',
+    elevation: 1,
+  },
+  balaoUser: {
+    alignSelf: 'flex-end',
+    backgroundColor: '#4A0000',
+  },
+  balaoAI: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#F2F2F2',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  textUser: {
+    color: '#FFF',
+    fontSize: 15,
+  },
+  textAI: {
+    color: '#333',
+    fontSize: 15,
+    lineHeight: 20,
+  },
+  quickActions: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 6,
+    marginVertical: 10,
+  },
+  chip: {
+    backgroundColor: '#FFF',
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderRadius: 25,
+    borderWidth: 1,
+    borderColor: '#4A0000',
+  },
+  chipText: {
+    fontSize: 11,
+    color: '#4A0000',
+    fontWeight: 'bold',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    paddingHorizontal: 15,
+    paddingTop: 10,
+    paddingBottom: Platform.OS === 'android' ? 20 : 35,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    borderTopWidth: 1,
+    borderTopColor: '#EEEEEE',
+  },
+  input: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: '#CCCCCC',
+    borderRadius: 25,
+    paddingHorizontal: 20,
+    height: 48,
+    backgroundColor: '#FAFAFA',
+    color: '#333',
+  },
+  sendBtn: {
+    marginLeft: 10,
+    backgroundColor: '#4A0000',
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 2,
+  },
+});
+
+export default styleSuport;
