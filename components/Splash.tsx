@@ -13,18 +13,18 @@ export default function CustomSplashScreen({ onFinish }: SplashProps) {
   useEffect(() => {
     animationRef.current?.play();
     
-    // Esconde a barra de navegação de baixo no Android durante o Lottie
+    
     if (Platform.OS === 'android') {
       NavigationBar.setVisibilityAsync("hidden");
     }
   }, []);
 
   const handleAnimationFinish = () => {
-    // Devolve a barra de navegação ao encerrar
+   
     if (Platform.OS === 'android') {
       NavigationBar.setVisibilityAsync("visible");
     }
-    // Avisa o _layout para renderizar a tela principal do app
+    
     onFinish();
   };
 
@@ -36,7 +36,7 @@ export default function CustomSplashScreen({ onFinish }: SplashProps) {
         onAnimationFinish={handleAnimationFinish}
         resizeMode="cover"
         style={{ width: '100%', height: '100%' }}
-        source={require('../assets/images/lottie_citec.json')} // Certifique-se de colocar o arquivo aqui
+        source={require('../assets/images/lottie_citec.json')} 
         autoPlay={false}
         loop={false}
       />
