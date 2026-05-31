@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage"
 
 const firebaseConfig = {
-  apiKey: "CADASTRE A SUA ;)",
-  authDomain: "CADASTRE A SUA ;)",
-  projectId: "CADASTRE A SUA ;)",
-  storageBucket: "CADASTRE A SUA ;)",
-  messagingSenderId: "CADASTRE A SUA ;)",
-  appId: "CADASTRE A SUA ;)",
-  measurementId: "CADASTRE A SUA ;)"
+  apiKey: "Cadastre a sua :)",
+  authDomain: "Cadastre a sua :)",
+  projectId: "Cadastre a sua :)",
+  storageBucket: "Cadastre a sua :)",
+  messagingSenderId: "Cadastre a sua :)",
+  appId: "Cadastre a sua :)",
+  measurementId: "Cadastre a sua :)"
 };
 
 const app = initializeApp(firebaseConfig);

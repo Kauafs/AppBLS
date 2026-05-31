@@ -74,6 +74,15 @@ export default function CustomDrawerContent(props: any) {
           <Text style={styles.menuLabel}>Evolução</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity 
+          style={styles.menuItem} 
+          onPress={() => router.push('/screens/sobre/info')}
+        >
+          <View style={styles.iconContainer}>
+            <Ionicons name="information-circle" size={24} color="#4A0000" />
+          </View>
+          <Text style={styles.menuLabel}>Sobre nós</Text>
+        </TouchableOpacity>
         
 
       </DrawerContentScrollView>
